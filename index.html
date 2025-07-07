@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <h1>Unit Converter</h1>
+        <p>Convert Length, Weight, Volume, and more</p>
+    </header>
+
+    <!-- Main Converter Section -->
+
+    <main>
+
+        <!-- Unit Type Selector -->
+
+        <div class="unit-type">
+            <div clas="dropdown">
+                <select id="unit-category">
+                    <option value="length">Length</option>
+                    <option value="weight">Weight</option>
+                    <option value="temperature">Temperature</option>
+                    <option value="volume">Volume</option>
+                    <option value="area">Area</option>
+                    <option value="time">Time</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Conversion Inputs -->
+
+        <div class="input">
+            <div class="input-group" id="in">
+                <input type="number" id="from-value" placeholder="Enter value"/>
+                <select id="from-unit"></select>
+            </div>
+            <div class="input-group" id="res">
+                <input type="text" id="to-value" placeholder="Result" disabled />
+                <select id="to-unit"></select>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+
+        <div class="btn">
+            <button id="clear-btn">Clear</button>
+            <button id="convert-btn">Convert</button>
+        </div>
+
+        <!-- Result Display -->
+
+        <div class="result">
+            <p id="result-text"></p>
+        </div>
+
+        <!-- Conversion History Log -->
+
+        <div class="history">
+            <h2>Conversion History</h2>
+            <ul id="history-list"></ul>
+            <button id="clear-history-btn">Clear History</button>
+        </div>
+
+        <!-- Dark Mode Toggle -->
+
+        <button id="dark-mode-toggle">🌙 Dark Mode</button>
+        
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>Developed by 
+            <a href="https://github.com/nidaa41" target="_blank" rel="noopener noreferrer">
+                Nida.
+            </a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

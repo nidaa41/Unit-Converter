@@ -1,0 +1,269 @@
+/* Typography */
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f3f4f6;
+  color: #1f2937;
+  margin: 0;
+  padding: 0;
+}
+
+/* Layout */
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+
+header {
+  text-align: center;
+  padding: 20px 10px;
+}
+
+header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 16px;
+}
+
+/* Unit Type Selector */
+
+.unit-type {
+  margin-bottom: 20px;
+}
+
+.unit-type select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #d1d5db;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+/* Conversion inputs */
+
+ .input {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex: 1 1 100%;
+}
+
+#in,
+#res {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+}
+
+#in input,
+#res input {
+  flex: 7;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  background-color: var(--input-bg, #ffffff); /* Use CSS variable with fallback */
+  color: inherit;
+}
+
+#in select,
+#res select {
+  flex: 3; /* 30% width */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+/* Buttons */
+
+.btn {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+}
+
+#convert-btn {
+  background-color: #2563eb;
+  color: white;
+}
+
+#clear-btn,
+#clear-history-btn {
+  background-color: #9ca3af;
+  color: white;
+}
+
+/* Result */
+
+.result {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* History */
+
+.history {
+  background-color: #e5e7eb;
+  padding: 15px;
+  border-radius: 8px;
+  font-family: 'Courier New', monospace;
+}
+
+.history h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#history-list {
+  list-style-type: none;
+  padding-left: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+#history-list li {
+  font-size: 14px;
+  padding: 4px 0;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 30px;
+  color: #6b7280;
+}
+footer a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+/* Dark Mode */
+
+body.dark-mode {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+
+body.dark-mode input,
+body.dark-mode select {
+  background-color: #374151 !important;
+  color: #ffffff !important;
+  border-color: #6b7280 !important;
+}
+
+body.dark-mode #to-value:disabled {
+  background-color: #4b5563;
+}
+
+body.dark-mode .history {
+  background-color: #374151;
+}
+
+body.dark-mode button {
+  color: white;
+}
+
+body.dark-mode #convert-btn {
+  background-color: #3b82f6;
+}
+
+body.dark-mode #clear-btn,
+body.dark-mode #clear-history-btn {
+  background-color: #6b7280;
+}
+
+body.dark-mode footer {
+  background-color: #1f2937;
+  color: #9ca3af;
+}
+
+/* Dark Mode Toggle Button */
+
+#dark-mode-toggle {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+body.dark-mode #dark-mode-toggle {
+  background-color: #9ca3af;
+  color: black;
+}
+
+/* Removing Spinner arrow */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+  .input {
+    flex-direction: column;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group select {
+    flex: none;
+    width: 100%;
+  }
+
+  .input-group input {
+    flex: none;
+    width: 94%;
+  }
+
+  #dark-mode-toggle {
+    padding: 6px 10px;
+    font-size: 10px;
+    width: 90px;
+  }
+}
