@@ -16,13 +16,13 @@ A fully responsive and user-friendly **Unit Converter** tool that allows you to 
 
 ## UI Preview
 
-![img_1](https://github.com/user-attachments/assets/7870091c-af2f-43da-9101-9d36c3cec630)
+![img_1](https://github.com/user-attachments/assets/092f5e44-ba70-43ee-a4fd-d83fbc0891b5)
 
 ---
 
 ## Dark Mode
 
-![img_3](https://github.com/user-attachments/assets/54144815-095c-4aa8-9a3b-51885b238d67)
+![img_3](https://github.com/user-attachments/assets/401f404c-fd47-4d69-b89c-a064e02732b9)
 
 ---
 
